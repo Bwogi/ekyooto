@@ -38,6 +38,9 @@ export default function SignIn() {
         case 'auth/wrong-password':
           setError('Incorrect password');
           break;
+        case 'auth/invalid-credential':
+          setError('Invalid email or password');
+          break;
         default:
           setError('Failed to sign in');
           console.error('Sign in error:', authError.code, authError.message);
