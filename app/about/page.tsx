@@ -59,7 +59,7 @@ export default function About() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                About TogetherUG Boston
+                About ekyooto Boston
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Building a vibrant Ugandan community in Boston through connection, culture, and mutual support.
@@ -76,7 +76,7 @@ export default function About() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl leading-8 text-gray-600">
-                TogetherUG Boston aims to create a strong, supportive community for Ugandans living in the Greater Boston area. 
+                ekyooto Boston aims to create a strong, supportive community for Ugandans living in the Greater Boston area. 
                 We strive to preserve our cultural heritage while fostering meaningful connections and providing resources for 
                 personal and professional growth.
               </p>
@@ -96,7 +96,7 @@ export default function About() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Values</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            These core values guide everything we do at TogetherUG Boston.
+            These core values guide everything we do at ekyooto Boston.
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">

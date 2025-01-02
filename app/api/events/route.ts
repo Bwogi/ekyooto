@@ -12,7 +12,7 @@ interface EventWithId extends Document {
 export async function GET() {
   try {
     const client = await clientPromise
-    const db = client.db("togetherug")
+    const db = client.db("ekyooto")
     
     const eventsCollection = await db.collection("events").find({}).toArray()
     const events: Event[] = eventsCollection.map(doc => ({
@@ -45,7 +45,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const client = await clientPromise
-    const db = client.db("togetherug")
+    const db = client.db("ekyooto")
     const body = await request.json()
 
     // Convert string IDs to ObjectIds

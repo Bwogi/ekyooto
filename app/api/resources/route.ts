@@ -10,7 +10,7 @@ interface ResourceWithId extends Document {
 export async function GET() {
   try {
     const client = await clientPromise
-    const db = client.db("togetherug")
+    const db = client.db("ekyooto")
     
     const resourcesCollection = await db
       .collection("resources")
@@ -45,7 +45,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const client = await clientPromise
-    const db = client.db("togetherug")
+    const db = client.db("ekyooto")
     const body = await request.json()
 
     const newResource: Omit<ResourceWithId, '_id'> = {

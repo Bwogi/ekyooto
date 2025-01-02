@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold">
-              TogetherUG Boston
+              ekyooto Boston
             </Link>
           </div>
           

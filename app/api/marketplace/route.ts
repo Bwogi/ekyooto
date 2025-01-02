@@ -11,7 +11,7 @@ interface ListingWithId extends Document {
 export async function GET() {
   try {
     const client = await clientPromise
-    const db = client.db("togetherug")
+    const db = client.db("ekyooto")
     
     const listingsCollection = await db
       .collection("marketplace")
@@ -48,7 +48,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const client = await clientPromise
-    const db = client.db("togetherug")
+    const db = client.db("ekyooto")
     const body = await request.json()
 
     const newListing: Omit<ListingWithId, '_id'> = {

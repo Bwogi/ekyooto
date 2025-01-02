@@ -20,7 +20,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  TogetherUG Boston
+                  ekyooto Boston
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Connecting and empowering the Ugandan community in Boston through cultural exchange, support networks, and shared experiences.
@@ -145,7 +145,7 @@ export default function Home() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Discover all the ways TogetherUG Boston can help you connect with the community.
+            Discover all the ways ekyooto Boston can help you connect with the community.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
