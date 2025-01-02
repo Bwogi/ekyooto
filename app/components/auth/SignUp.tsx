@@ -64,16 +64,18 @@ export default function SignUp() {
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <Image
-                className="h-10 w-auto"
+              <Link href="/">
+            <Image
+                className="h-40 w-auto"
                 src="/logo.png"
                 alt="Ekyooto"
-                width={40}
-                height={40}
+                width={160}
+                height={160}
                 priority
               />
-              <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                Create your account
+              </Link>
+              <h2 className="mt-8 text-xl leading-9 tracking-tight text-gray-900">
+              <span className='font-bold'>Your </span>Emergency Assistance Network
               </h2>
               <p className="mt-2 text-sm leading-6 text-gray-500">
                 Already have an account?{' '}
@@ -177,8 +179,8 @@ export default function SignUp() {
         </div>
         <div className="relative hidden w-0 flex-1 lg:block">
           <Image
-            className="absolute inset-0 h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c"
+            className="absolute inset-0 h-full w-full rounded-xl object-cover m-2"
+            src="/signup2.jpg"
             alt="Background"
             fill
             sizes="50vw"
