@@ -36,4 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 # firebase
-config/serviceAccount.json
+/config/firebase/serviceAccount.json
+serviceAccount.json
+firebase-adminsdk.json
+**/firebase/admin.json
