@@ -7,7 +7,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function VerifyEmail() {
-  const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const { user, sendEmailVerification } = useAuth();
@@ -22,12 +21,11 @@ export default function VerifyEmail() {
   const handleResendVerification = async () => {
     try {
       setMessage('');
-      setError('');
       setLoading(true);
       await sendEmailVerification();
       setMessage('Verification email sent! Please check your inbox.');
-    } catch (error) {
-      setError('Failed to resend verification email. Please try again later.');
+    } catch {
+      setMessage('Failed to send verification email. Please try again later.');
     } finally {
       setLoading(false);
     }
@@ -55,26 +53,11 @@ export default function VerifyEmail() {
                 Verify your email
               </h2>
               <p className="mt-2 text-sm leading-6 text-gray-500">
-                We've sent a verification email to {user.email}
+                We&apos;ve sent a verification email to {user.email}
               </p>
             </div>
 
             <div className="mt-10">
-              {error && (
-                <div className="rounded-md bg-red-50 p-4 mb-6">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <div className="ml-3">
-                      <h3 className="text-sm font-medium text-red-800">{error}</h3>
-                    </div>
-                  </div>
-                </div>
-              )}
-
               {message && (
                 <div className="rounded-md bg-green-50 p-4 mb-6">
                   <div className="flex">
@@ -92,7 +75,7 @@ export default function VerifyEmail() {
 
               <div className="space-y-6">
                 <p className="text-sm text-gray-600">
-                  Click the link in the email to verify your account. If you haven't received the email, you can request a new one.
+                  Click the link in the email to verify your account. If you haven&apos;t received the email, you can request a new one.
                 </p>
 
                 <button
